@@ -1,12 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+//public
 import PageHome from "./pagepublic/PageHome";
+//Layouts
 import LayoutPublic from "./layouts/LayoutPublic";
 import LayoutAdmin from "./layouts/LayoutAdmin";
 import LayoutClient from "./layouts/LayoutClient";
+//Auth
 import ProtectedRoutes from "./pageauth/ProtectedRoutes";
+import Login from "./pageauth/Login";
+
 import { BrowserRouter, Route, Routes, HashRouter } from "react-router-dom";
 
 const App = () => {
@@ -16,6 +20,7 @@ const App = () => {
                 {/* publica */}
                 <Route path="/" element={<LayoutPublic/>}>
                     <Route index element={<PageHome/>}/>
+                    <Route path='/login' element={<Login/>}/>
                 </Route>
 
                 {/* Privadas */}
