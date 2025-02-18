@@ -6,6 +6,7 @@ import { Outlet } from 'react-router-dom'
 const LayoutClient = () => {
   return (
     <>
+    <h1>Layout Client</h1>
       <Navbar/>
       <Outlet/>
       <Footer/>

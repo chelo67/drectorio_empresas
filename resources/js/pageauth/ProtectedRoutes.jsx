@@ -1,8 +1,9 @@
-import React from "react";
-import { Outlet } from "react-router-dom";
-
+import React from 'react'
+import { Outlet } from 'react-router-dom'
 const ProtectedRoutes = () => {
-    return <Outlet />; // No protege nada por ahora
-};
+  return (
+    <Outlet />
+  )
+}
 
-export default ProtectedRoutes;
+export default ProtectedRoutes

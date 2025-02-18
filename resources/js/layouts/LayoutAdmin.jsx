@@ -6,6 +6,7 @@ import { Outlet } from 'react-router-dom'
 const LayoutAdmin = () => {
   return (
     <>
+    <h1>Layout Admin</h1>
       <Navbar />
       <Outlet />
       <Footer />
