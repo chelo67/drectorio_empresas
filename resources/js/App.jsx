@@ -10,8 +10,9 @@ import LayoutClient from "./layouts/LayoutClient";
 //Auth
 import ProtectedRoutes from "./pageauth/ProtectedRoutes";
 import Login from "./pageauth/Login";
+import Register from "./pageauth/Register";
 
-import { BrowserRouter, Route, Routes, HashRouter } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 const App = () => {
     return (
@@ -21,6 +22,7 @@ const App = () => {
                 <Route path="/" element={<LayoutPublic/>}>
                     <Route index element={<PageHome/>}/>
                     <Route path='/login' element={<Login/>}/>
+                    <Route path='/register' element={<Register/>}/>
                 </Route>
 
                 {/* Privadas */}
