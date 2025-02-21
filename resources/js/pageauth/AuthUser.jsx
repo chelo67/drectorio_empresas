@@ -33,7 +33,7 @@ const AuthUser = () => {
 
         setUser(user)
         setToken(token)
-        setRol(Rol)
+        setRol(rol)
 
         //rol : admin | client
 

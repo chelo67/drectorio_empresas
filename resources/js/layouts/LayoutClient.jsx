@@ -10,14 +10,13 @@ const LayoutClient = () => {
   const navigate = useNavigate()
 
   useEffect(()=>{
-    if(getRol !="client"){
+    if(getRol()!="client"){
       navigate("/")
     }
   },[])
 
   return (
     <>
-    <h1>Layout Client</h1>
       <Navbar/>
       <Outlet/>
       <Footer/>

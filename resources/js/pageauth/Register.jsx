@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from 'react'
-import config from '../config';
+import Config from '../Config';
 import { useNavigate } from 'react-router-dom';
 import AuthUser from './AuthUser';
 
@@ -20,7 +20,7 @@ const Register = () => {
     const submitRegistro = async(e) => {
         e.preventDefault();
 
-        config.getRegister({name,email,password})
+        Config.getRegister({name,email,password})
         .then(({data})=>{
             if(data.success) {
                 navigate("/login")
